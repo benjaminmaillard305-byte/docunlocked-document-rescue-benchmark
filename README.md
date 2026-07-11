@@ -6,6 +6,11 @@ This is not a universal OCR leaderboard and it does not claim that one tool is b
 
 Live report: https://bluehorizonlabs.io/docunlocked/ocr-failure-benchmark/
 
+Free companion resources:
+
+- [Tesseract confidence score analyzer](https://bluehorizonlabs.io/docunlocked/tesseract-confidence-analyzer/) - local TSV histogram, page summary, low-confidence words, and JSON report.
+- [Tesseract confidence score guide](https://bluehorizonlabs.io/docunlocked/tesseract-confidence-score/) - why engine confidence is not ground-truth OCR accuracy.
+
 ## Included cases
 
 | Case | Failure pressure | Source |
