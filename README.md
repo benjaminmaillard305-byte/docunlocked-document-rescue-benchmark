@@ -41,6 +41,12 @@ node scripts/summarize.mjs
 
 The summarizer fails when an expected result is missing and writes deterministic JSON and CSV from the TSV/TXT files.
 
+For one-off TSV inspection without the full benchmark runner:
+
+```bash
+node examples/tesseract-confidence-summary.mjs output.tsv
+```
+
 ## Contributions
 
 Open an issue with a public or contributor-authorized difficult document, source rights information, and the failure mode it tests. Do not submit private, personal, medical, legal, or customer documents.
