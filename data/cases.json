@@ -1,0 +1,61 @@
+{
+  "benchmark_version": "0.1.0",
+  "released": "2026-07-11",
+  "engine": {
+    "name": "Tesseract",
+    "version": "5.5.2",
+    "language": "eng",
+    "oem": 1,
+    "page_segmentation_modes": [6, 11]
+  },
+  "cases": [
+    {
+      "id": "nist-sd19",
+      "title": "NIST SD19 handwriting sample form",
+      "source_url": "https://www.nist.gov/image/sd19jpg",
+      "source_status": "Public NIST benchmark image",
+      "source_asset": "assets/industry/handwriting-nist-form.jpg",
+      "source_sha256": "19077d062910638da0aa39e2a4344da68374ec745231074dbf9f46f07b72a1bc",
+      "width": 644,
+      "height": 845,
+      "failure_mode": "Handwriting mixed with printed form structure",
+      "observation": "PSM 6 emphasizes the handwritten constitutional passage while PSM 11 surfaces more printed labels and isolated number rows; neither plain-text output preserves the form as fields."
+    },
+    {
+      "id": "nara-1930-census",
+      "title": "1930 Census population schedule",
+      "source_url": "https://www.archives.gov/files/education/lessons/images/1930-census-orchard-st.pdf",
+      "source_status": "U.S. National Archives educational PDF derivative",
+      "source_asset": "assets/industry/handwriting-census-table.jpg",
+      "source_sha256": "489eb0a3acbed2bfe7c9452d10e140cd8c090af2add702e1f8f8b9881aa1088c",
+      "width": 1600,
+      "height": 1140,
+      "failure_mode": "Handwriting inside a dense row and column grid",
+      "observation": "Both outputs contain fragments, but the plain text does not retain row identity or column attachment, which are necessary to interpret a census record."
+    },
+    {
+      "id": "loc-bell-notebook",
+      "title": "Alexander Graham Bell notebook page",
+      "source_url": "https://www.loc.gov/resource/magbell.25300201/?sp=4",
+      "source_status": "Library of Congress image; see source page for rights information",
+      "source_asset": "assets/industry/handwriting-lab-notebook.jpg",
+      "source_sha256": "4d387dd0ba9d38af0ac7d2751a7db10c822f360d6d0fa2d2efbd7c632a6c48a5",
+      "width": 2090,
+      "height": 2410,
+      "failure_mode": "Faded historical handwriting and irregular reading order",
+      "observation": "Both profiles produce many plausible-looking fragments, illustrating why fluent output still requires line-by-line comparison with the source."
+    },
+    {
+      "id": "irs-w4",
+      "title": "IRS Form W-4",
+      "source_url": "https://www.irs.gov/pub/irs-pdf/fw4.pdf",
+      "source_status": "U.S. federal government public document derivative",
+      "source_asset": "assets/proof-public/before-irs-w4-en.jpg",
+      "source_sha256": "904b53ad9c31444e1db36e6dcfc830155616a48e97a26ac46f52e2039c774192",
+      "width": 980,
+      "height": 1280,
+      "failure_mode": "Printed form with checkboxes, fields, and multi-column semantics",
+      "observation": "Large amounts of text are surfaced, but spelling substitutions appear and plain text does not preserve checkbox state or reliable label-to-field relationships."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+case_id,title,psm,recognized_words,text_characters,nonempty_lines,mean_confidence,median_confidence,words_below_50,words_below_50_share,source_sha256
+"nist-sd19","NIST SD19 handwriting sample form",6,67,414,14,45.81,41.21,37,0.5522,"19077d062910638da0aa39e2a4344da68374ec745231074dbf9f46f07b72a1bc"
+"nist-sd19","NIST SD19 handwriting sample form",11,218,1418,72,65.15,83.88,74,0.3394,"19077d062910638da0aa39e2a4344da68374ec745231074dbf9f46f07b72a1bc"
+"nara-1930-census","1930 Census population schedule",6,343,1248,29,24.65,23.36,317,0.9242,"489eb0a3acbed2bfe7c9452d10e140cd8c090af2add702e1f8f8b9881aa1088c"
+"nara-1930-census","1930 Census population schedule",11,531,2394,355,29.32,29.17,446,0.8399,"489eb0a3acbed2bfe7c9452d10e140cd8c090af2add702e1f8f8b9881aa1088c"
+"loc-bell-notebook","Alexander Graham Bell notebook page",6,151,648,20,25.84,22.61,132,0.8742,"4d387dd0ba9d38af0ac7d2751a7db10c822f360d6d0fa2d2efbd7c632a6c48a5"
+"loc-bell-notebook","Alexander Graham Bell notebook page",11,143,577,47,26.31,23.42,122,0.8531,"4d387dd0ba9d38af0ac7d2751a7db10c822f360d6d0fa2d2efbd7c632a6c48a5"
+"irs-w4","IRS Form W-4",6,784,4458,55,86.75,95.25,56,0.0714,"904b53ad9c31444e1db36e6dcfc830155616a48e97a26ac46f52e2039c774192"
+"irs-w4","IRS Form W-4",11,792,4685,103,90.04,95.7,27,0.0341,"904b53ad9c31444e1db36e6dcfc830155616a48e97a26ac46f52e2039c774192"

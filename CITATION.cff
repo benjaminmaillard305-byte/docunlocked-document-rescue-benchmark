@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, cite this repository and the original document sources."
+title: "Open Document Rescue Benchmark"
+version: 0.1.0
+date-released: 2026-07-11
+type: dataset
+authors:
+  - name: "Blue Horizon Ventures Florida LLC"
+repository-code: "https://github.com/benjaminmaillard305-byte/docunlocked-document-rescue-benchmark"
+url: "https://bluehorizonlabs.io/docunlocked/ocr-failure-benchmark/"
+license: MIT
+keywords:
+  - OCR
+  - handwriting recognition
+  - document AI
+  - table extraction
+  - historical documents

@@ -1,0 +1,40 @@
+name: Propose a difficult public document
+description: Suggest a public-domain or contributor-authorized document for a future benchmark release.
+title: "[case] "
+labels:
+  - benchmark-case
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Public source URL
+      description: Link to the authoritative source page, not a re-upload.
+    validations:
+      required: true
+  - type: dropdown
+    id: rights
+    attributes:
+      label: Rights basis
+      options:
+        - Public domain
+        - Open license
+        - Contributor authorization
+        - Rights status requires review
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure mode
+      description: Explain what ordinary OCR loses, such as row identity, handwriting, reading order, or faded text.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: This submission contains no private, personal, medical, legal, customer, or confidential document.
+          required: true
+        - label: I understand that acceptance requires rights and provenance review.
+          required: true

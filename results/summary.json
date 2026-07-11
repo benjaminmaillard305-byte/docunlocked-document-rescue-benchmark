@@ -1,0 +1,129 @@
+{
+  "benchmark_version": "0.1.0",
+  "released": "2026-07-11",
+  "engine": {
+    "name": "Tesseract",
+    "version": "5.5.2",
+    "language": "eng",
+    "oem": 1,
+    "page_segmentation_modes": [
+      6,
+      11
+    ]
+  },
+  "interpretation_warning": "Engine confidence is not ground-truth accuracy.",
+  "results": [
+    {
+      "case_id": "nist-sd19",
+      "title": "NIST SD19 handwriting sample form",
+      "psm": 6,
+      "recognized_words": 67,
+      "text_characters": 414,
+      "nonempty_lines": 14,
+      "mean_confidence": 45.81,
+      "median_confidence": 41.21,
+      "words_below_50": 37,
+      "words_below_50_share": 0.5522,
+      "source_sha256": "19077d062910638da0aa39e2a4344da68374ec745231074dbf9f46f07b72a1bc",
+      "observation": "PSM 6 emphasizes the handwritten constitutional passage while PSM 11 surfaces more printed labels and isolated number rows; neither plain-text output preserves the form as fields."
+    },
+    {
+      "case_id": "nist-sd19",
+      "title": "NIST SD19 handwriting sample form",
+      "psm": 11,
+      "recognized_words": 218,
+      "text_characters": 1418,
+      "nonempty_lines": 72,
+      "mean_confidence": 65.15,
+      "median_confidence": 83.88,
+      "words_below_50": 74,
+      "words_below_50_share": 0.3394,
+      "source_sha256": "19077d062910638da0aa39e2a4344da68374ec745231074dbf9f46f07b72a1bc",
+      "observation": "PSM 6 emphasizes the handwritten constitutional passage while PSM 11 surfaces more printed labels and isolated number rows; neither plain-text output preserves the form as fields."
+    },
+    {
+      "case_id": "nara-1930-census",
+      "title": "1930 Census population schedule",
+      "psm": 6,
+      "recognized_words": 343,
+      "text_characters": 1248,
+      "nonempty_lines": 29,
+      "mean_confidence": 24.65,
+      "median_confidence": 23.36,
+      "words_below_50": 317,
+      "words_below_50_share": 0.9242,
+      "source_sha256": "489eb0a3acbed2bfe7c9452d10e140cd8c090af2add702e1f8f8b9881aa1088c",
+      "observation": "Both outputs contain fragments, but the plain text does not retain row identity or column attachment, which are necessary to interpret a census record."
+    },
+    {
+      "case_id": "nara-1930-census",
+      "title": "1930 Census population schedule",
+      "psm": 11,
+      "recognized_words": 531,
+      "text_characters": 2394,
+      "nonempty_lines": 355,
+      "mean_confidence": 29.32,
+      "median_confidence": 29.17,
+      "words_below_50": 446,
+      "words_below_50_share": 0.8399,
+      "source_sha256": "489eb0a3acbed2bfe7c9452d10e140cd8c090af2add702e1f8f8b9881aa1088c",
+      "observation": "Both outputs contain fragments, but the plain text does not retain row identity or column attachment, which are necessary to interpret a census record."
+    },
+    {
+      "case_id": "loc-bell-notebook",
+      "title": "Alexander Graham Bell notebook page",
+      "psm": 6,
+      "recognized_words": 151,
+      "text_characters": 648,
+      "nonempty_lines": 20,
+      "mean_confidence": 25.84,
+      "median_confidence": 22.61,
+      "words_below_50": 132,
+      "words_below_50_share": 0.8742,
+      "source_sha256": "4d387dd0ba9d38af0ac7d2751a7db10c822f360d6d0fa2d2efbd7c632a6c48a5",
+      "observation": "Both profiles produce many plausible-looking fragments, illustrating why fluent output still requires line-by-line comparison with the source."
+    },
+    {
+      "case_id": "loc-bell-notebook",
+      "title": "Alexander Graham Bell notebook page",
+      "psm": 11,
+      "recognized_words": 143,
+      "text_characters": 577,
+      "nonempty_lines": 47,
+      "mean_confidence": 26.31,
+      "median_confidence": 23.42,
+      "words_below_50": 122,
+      "words_below_50_share": 0.8531,
+      "source_sha256": "4d387dd0ba9d38af0ac7d2751a7db10c822f360d6d0fa2d2efbd7c632a6c48a5",
+      "observation": "Both profiles produce many plausible-looking fragments, illustrating why fluent output still requires line-by-line comparison with the source."
+    },
+    {
+      "case_id": "irs-w4",
+      "title": "IRS Form W-4",
+      "psm": 6,
+      "recognized_words": 784,
+      "text_characters": 4458,
+      "nonempty_lines": 55,
+      "mean_confidence": 86.75,
+      "median_confidence": 95.25,
+      "words_below_50": 56,
+      "words_below_50_share": 0.0714,
+      "source_sha256": "904b53ad9c31444e1db36e6dcfc830155616a48e97a26ac46f52e2039c774192",
+      "observation": "Large amounts of text are surfaced, but spelling substitutions appear and plain text does not preserve checkbox state or reliable label-to-field relationships."
+    },
+    {
+      "case_id": "irs-w4",
+      "title": "IRS Form W-4",
+      "psm": 11,
+      "recognized_words": 792,
+      "text_characters": 4685,
+      "nonempty_lines": 103,
+      "mean_confidence": 90.04,
+      "median_confidence": 95.7,
+      "words_below_50": 27,
+      "words_below_50_share": 0.0341,
+      "source_sha256": "904b53ad9c31444e1db36e6dcfc830155616a48e97a26ac46f52e2039c774192",
+      "observation": "Large amounts of text are surfaced, but spelling substitutions appear and plain text does not preserve checkbox state or reliable label-to-field relationships."
+    }
+  ]
+}
